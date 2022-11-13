@@ -1,0 +1,257 @@
+/* ----- Navigation ----- */
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    height: 4em;
+}
+
+.navigation div{
+    background-color: #100563;
+    position: relative;
+    width: 12%;
+    height: 90%;
+    top:2%;
+    text-align: center;
+    margin-left: .2%;
+}
+
+.navigation div:hover{
+    background-color: #18088c;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 25%;
+    padding-top: 20%;
+}
+
+a.fill-div{
+    display: block;
+    height: 65%;
+    width: 100%;
+    position: relative;
+    top: -25%;
+    /* margin-top: 5%;; */
+}
+
+.navbg {
+    background-color: black;
+}
+
+div .navCurrent{
+    background-color: #18088c;
+    position: relative;
+    top: 1%;
+    height: 38%;
+}
+
+a.navCurrent {
+    padding-top: 13%;
+    padding-bottom: 7%;;
+}
+
+.navigation img {
+    width: 4em;
+    position: relative;
+    bottom: 19.8em;
+}
+
+.navigation img:hover {
+    opacity: 0.85;
+}
+
+/* ----- Title Navigation ----- */
+
+.titleNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navArrow {
+    width: 6em;
+    height: 6em;
+}
+
+.navArrow:hover {
+    opacity: .85;
+}
+
+.leftArrow {
+    padding-left: 2em;
+}
+
+.rightArrow {
+    padding-right: 2em;
+}
+
+/* ----- General Styling ----- */
+
+body{
+    background-color: #b4b2c2;
+}
+
+h1, h2, h3 {
+    font-family: 'Bree Serif', 'Montserrat', sans-serif;
+    font-family: 'Bree Serif', 'Ubuntu', sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding-top: .6%;
+}
+
+h2{
+    text-align: center;
+}
+
+h3 {
+    padding-left: 3%;
+}
+
+p, ul, ol, a, figcaption {
+    font-family: 'Gantari', 'Montserrat', sans-serif;
+    font-family: 'Gantari', 'Ubuntu', sans-serif;
+}
+
+p {
+    padding-left: 5%;
+    padding-right: 5%;  
+}
+
+ul{
+    list-style-type: square;
+}
+
+ol {
+    padding-left: 6%;
+}
+
+img {
+    /* margin: auto auto  auto; */
+}
+
+figcaption {
+    background-color: #b4b2c2;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.lessonIntro li{
+    margin: 3% auto;
+}
+
+.pageContainer {
+    border: solid;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.home {
+    text-align: center;
+}
+
+
+/* ----- Image Styling ----- */
+
+.imageWrapper {
+    display: flex;
+    justify-content: center;
+    background-color: black;   
+}
+
+.imageContainer {
+    margin: .2% auto .2% auto;
+}
+
+.imageContainerLeft {
+    background-color: #747a77;
+    width: 30%;
+    margin: .2% .2% .2% auto;
+}
+
+.imageContainerRight {
+    background-color: #747a77;
+    width: 30%;
+    margin: .2% auto .2% .2%;
+}
+
+.dataDescriptor {
+    text-align: center;
+    font-size: 110%;
+    padding-top: 1%;
+    padding-right: 10%;
+}
+
+/* ----- Content Sibling Styling ----- */
+
+.contentGroup {
+    display: flex;
+    justify-content: center;
+}
+
+.contentGroup ol {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;;
+}
+
+.contentSibling p{
+    text-align: center;
+}
+
+.bluebg {
+    background-color: #18088c;
+}
+
+
+.blackbgFront {
+    background-color: #b4b2c2;
+    height: 100%;
+    border: 3px solid black; 
+}
+
+
+/* ----- Sidebar Styling ----- */
+
+.sidebarGroup {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    
+}
+.sidebar {
+    background-color: #18088c;
+    color: #dbdae6;
+    margin: .2% .2% .2% auto;
+    width: 50%;
+}
+
+.sidebarSibling {
+    background-color: #b4b2c2;
+    margin: .2% auto .2% auto;
+}
+
+.sidebarSibling p ol{
+    padding-left: 2%;;
+}
+
+.sidebarSibling ul{
+    padding-left: 10%;
+}
+
+.sidebar h3{
+    text-align: center ;
+}
+
+.dichotomousSidebar {
+    text-align: center;
+    color: #dbdae6;
+    font-size: 147.5%;
+    padding-top: 5%;
+}

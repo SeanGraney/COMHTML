@@ -1,0 +1,40 @@
+<!-- Used as a template for the addition of modules -->
+
+<!----- Header ----->
+- Make sure to include stylesheets and fonts found in the <link> tags of the head of data.html or research.html
+
+<!-- Navigation and Title -->
+- Navigation bar can be directly coppied from data.html or reasearch.html
+- Place the "navCurrent" class in the current <a> tag's <div> and remove it from whichever <div> it was coppied from.
+    Tihs will ensure the highlighting is currect 
+- Make sure to use the approrpiate heading tag as titles use the <h1> tag and the css should automatically style 
+    this tag
+- For the arrow navigation images make sure to change the href attribute to the desired destination
+
+<!----- Content ----->
+- If you desire to put page content side by side, put content in a div with the "contentGroup" class and all content
+    tags that should be side by side in a <div> with the "contentSibling" class
+
+<!-- Sidebars -->
+- For sidebars be sure to surround content in a <div> with the "sidebarGroup" class
+- For the actual sidebar surround the content in a <div> with the "sidebar" class
+- For the content parallel with the sidebar surround the content with a <div> and give it the class "sidebarSibling"
+    this is similar to the content section above.
+
+<!-- Images -->
+- Images will be presented in sets of three <div> tags
+- The far left and far right will be a blank <div> unless content is desired
+- The image will be in the middle with the caption contained in the <figcaption> tag
+- Use the "imageWrapper" class in a <div> to surround all image content.
+- The three section will be <div> tags with the given classes "imageContainerLeft", "imageContainer" and 
+    "imageContainerRight"
+- The <img> and <figcaption> tags will go in the "imageContainer" <div>
+- The remaining "imageContainerLeft" and "imageContainerRight" <div> tags can be edited to add relevant intformation.
+
+<!-- Basic Styling -->
+- If as black border is desired, be sure to attach the "blackbgFront" class to a <div> surrounding the desired content
+- If a blue background is desired, attach the "bluebg" class to a <div> surrounding the desired content
+
+
+
+

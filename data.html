@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Data</title>
+</head>
+<body>
+<div class="pageContainer">
+    <header>
+        <nav class="navigation">
+            <a href="index.html"><img src="./icons/home.gif" alt="Home Icon"></a>
+            <div><a class="fill-div" href="topic.html">Topic</a></div>
+            <div><a class="fill-div" href="research.html">Research</a></div>
+            <div><a class="fill-div navCurrent" href="data.html">Data</a></div>
+            <div><a class="fill-div" href="references.html">References</a></div>
+            <div><a class="fill-div" href="style.html">Style</a></div>
+            <div><a class="fill-div" href="layout.html">Layout</a></div>
+            <div><a class="fill-div" href="modality.html">Modality</a></div>
+            <div><a class="fill-div" href="proffesionalization.html">Proffesionalization</a></div>
+        </nav>
+    </header>
+
+    <div class="titleNav">
+        <a href="research.html"><img class="navArrow leftArrow" src="./icons/arrow_left.gif" alt="Left Navigation Arrow"></a>
+        <h1>How to Organize and Analyze Research Data</h1>
+        <a href="references.html"><img class="navArrow rightArrow" src="./icons/arrow_right.gif" alt="Right Navigation Arrow"></a>
+    </div>
+
+    <div class="sidebarGroup">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>You'll need the following:</h3>
+            <ul>
+                <li>Microsoft Excel</li>
+                <li>PASW (formerly SPSS) statistics software, or free trial download</li>
+            </ul>
+            <h3>You should already be familiar with:</h3>
+            <ul>   
+                <li>The basic functions and tools of Excel</li>
+                <li><em>Descriptive statistics</em> and <em>inferential statistics</em></li>
+                <li>Research design and how to identify <em>independent variables</em> and <em>dependent variables</em></li>
+            </ul>
+        </aside>
+        <!----------->
+        <div class="lessonIntro sidebarSibling">
+            <p>This short lesson is intended for graduate and advanced undergraduate students 
+                undertaking original research projects. After completing the 30-minute lesson, 
+                you will be able to to:
+            </p>
+            <ul>
+                <li>Format raw research data in an Excel spreadsheet for efficient analysis</li>
+                <li>Run basic descriptive statistics in Excel</li>
+                <li>Prepare the document for statistical analysis in the software package PASW</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Format Data for Analysis</h2>
+    <p>Make sure the computer you are working on has Microsoft Excel installed. Open the document ToolBox_DataLesson.xls 
+        [[[NOTE: NEED LINK TO DOWNLOAD TUTORIAL EXCEL FILE]]] in Excel and follow along with the lesson, 
+        taking action as instructed. In the Raw_Dataset spreadsheet, the name of each variable has been entered in the first row of each column.
+    </p>
+    <h3>Procedure</h3>
+    <ol>
+        <li>Each variable name must be different from other variable names.</li>
+        <li>The first variable (in column A) is a <em>unique identifier</em>.</li>
+        <li>Variable names must start with a letter (not numbers or special characters), so change <em>4tutorial_types</em> to <em>tutorial_types</em>.</li>
+        <li>Name variables so that they are intuitive to you. Therefore, change use and useful to <em>perc_ease_of_use</em> and <em>perc_usefulness</em>, respectively.</li>
+        <li>Your spreadsheet should look like Figure 1, and it should now be readily apparent that Column F refers to <em>Perceived Usefulness</em> and Column G refers to <em>Perceived Ease</em> of Use.</li>
+    </ol>
+
+    <div class="imageWrapper">
+        <div class="imageContainerLeft"></div>
+        <div class="imageContainer">
+            <img src="illustrations/datalesson_fig3.png" alt="Data Entry Example 1">
+            <!-- Caption -->
+            <figcaption>Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</figcaption>
+            <!------------->
+        </div>
+        <div class="imageContainerRight"></div>
+    </div>
+    
+
+    <p class="dataDescriptor">Data values, or rows, have been input for each subject in the experiment.</p>
+
+    <div class="contentGroup">
+        <div class="contentSibling">
+            <ol>
+                <li>Decide on input conventions and stick to them. In <em>gender</em>, change the "female" value to "F".</li>
+                <li>Separate data into component values whenever possible by adding new columns. For example, <em>tasks_completed</em> values (Y/Y/N) can be broken up into three components. So, add columns <em>task1</em>, <em>task2</em> and <em>task3</em>, and reformat values appropriately.</li>
+                <li>Double-check to ensure no data entry errors have been made, then delete the old <em>tasks_completed</em> column.</li>
+                <li>Your <em>Raw_Dataset</em> spreadsheet should now look like Figure 2.</li>
+            </ol>
+        </div>
+    
+        <div class="contentSibling">
+            <p>Replace categorical data values with "0" or "1" (0=no, 1=yes) to indicate whether or not the 
+                value is represented for the given subject/item. This makes the categorical values <em>dichotomous</em>, 
+                which gives the researcher maximum flexibility in testing for relationships or correlations.
+            </p>
+        </div>
+        
+        <div class="contentSibling">
+            <ol>
+                <li>Copy the Raw_Dataset values into the Sheet2 tab. Rename this sheet Formatted_Data.</li>
+                <li>In the Formatted_Data sheet, add new columns with <b>Insert > Columns</b> for each distinct value in categorical data columns (tutorial_types, gender, exp_level, task1, task2, and task3). You do not have to add a new column for task1, task2, and task3 because their values are already dichotomous.</li>
+                <li>Rename columns according to each possible categorical value. Copy and paste the values from the original column.</li>
+                <li>Replace dichotomous data values with "0" or "1" (0=no, 1=yes) using the replace function: <b>Edit > Replace</b>.</li>
+                <li>Your Formatted_Data spreadsheet should now look like Figure 3.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="imageWrapper">
+        <div class="imageContainerLeft bluebg">
+            <!-- Sidebar -->
+            <p class="dichotomousSidebar">Dichotomous variables allow for the easy isolation of characteristics for analysis. 
+                For example, separating experience levels allows the researcher to test in PASW whether 
+                subjects with low experience have perceived ease of use scores significantly different from 
+                those with medium and high experience levels.
+            </p>
+            <!--------->
+        </div>
+        <div class="imageContainer">
+            <img src="illustrations/datalesson_fig3 (1).png" alt="Data Entry Example 2">
+            <!-- Caption -->
+            <figcaption>Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</figcaption>
+            <!------------->
+        </div>
+        <div class="imageContainerRight"></div>
+    </div>
+
+</div>
+</body>
+</html>
